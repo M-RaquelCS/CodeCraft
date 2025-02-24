@@ -16,7 +16,8 @@
     "ocupada",
     "permanente",
     "Porta",
-    "temporário"
+    "temporário",
+    "zscore"
   ],
   "editor.fontFamily": "JetBrains Mono"
 }

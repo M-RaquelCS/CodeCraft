@@ -3,11 +3,15 @@ Content-Type: application/json
 
 {
   "name": "Raquel Santos",
-  "email": "m-raquel@outlook.com.br"
+  "email": "indicate@hotmail.com",
+  "referrer": "6e22d8a1-7e75-45bf-b0d4-34725a661b2b"
 }
 
-### Get invite
-GET http://localhost:3333/invites/raquel123
+### Get invite - second user: 0369352b-015f-439f-9cf1-077c42cc0274
+GET http://localhost:3333/invites/6e22d8a1-7e75-45bf-b0d4-34725a661b2b
 
 ### get count clicks
-GET http://localhost:3333/subscribers/raquel123/ranking/clicks
+GET http://localhost:3333/subscribers/6e22d8a1-7e75-45bf-b0d4-34725a661b2b/ranking/clicks
+
+### get count invites
+GET http://localhost:3333/subscribers/6e22d8a1-7e75-45bf-b0d4-34725a661b2b/ranking/count
