@@ -5,3 +5,6 @@ Content-Type: application/json
   "name": "Raquel Santos",
   "email": "m-raquel@outlook.com.br"
 }
+
+### Get invite
+GET http://localhost:3333/invites/raquel123
