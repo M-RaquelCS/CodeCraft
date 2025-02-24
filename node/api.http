@@ -8,3 +8,6 @@ Content-Type: application/json
 
 ### Get invite
 GET http://localhost:3333/invites/raquel123
+
+### get count clicks
+GET http://localhost:3333/subscribers/raquel123/ranking/clicks
