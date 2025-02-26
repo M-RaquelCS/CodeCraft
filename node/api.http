@@ -17,7 +17,7 @@ GET http://localhost:3333/subscribers/6e22d8a1-7e75-45bf-b0d4-34725a661b2b/ranki
 GET http://localhost:3333/subscribers/6e22d8a1-7e75-45bf-b0d4-34725a661b2b/ranking/count
 
 ### get ranking position
-GET http://localhost:3333/subscribers/6e22d8a1-7e75-45bf-b0d4-34725a661b2b/ranking/position
+GET http://localhost:3333/subscribers/0369352b-015f-439f-9cf1-077c42cc0274/ranking/position
 
 ### get ranking 
 GET http://localhost:3333/ranking
