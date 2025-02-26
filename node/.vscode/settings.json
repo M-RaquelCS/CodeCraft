@@ -9,14 +9,19 @@
   "cSpell.words": [
     "bitnami",
     "criação",
+    "decrescente",
     "definida",
     "estava",
     "hgetall",
     "inscrição",
     "ocupada",
+    "ordenação",
     "permanente",
     "Porta",
     "temporário",
+    "WITHSCORES",
+    "zrevrange",
+    "zrevrank",
     "zscore"
   ],
   "editor.fontFamily": "JetBrains Mono"
