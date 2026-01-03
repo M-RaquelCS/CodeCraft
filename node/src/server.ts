@@ -9,6 +9,7 @@ import {
 	type ZodTypeProvider,
 } from "fastify-type-provider-zod";
 import { env } from "./env";
+import { acessInviteLinkRoute } from "./routes/access-invite-link-route";
 import { subscribeToEventRoute } from "./routes/subscribe-to-event-route";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
@@ -29,6 +30,7 @@ app.register(fastifySwagger, {
 });
 
 app.register(subscribeToEventRoute);
+app.register(acessInviteLinkRoute);
 
 app.register(fastifySwaggerUi, {
 	routePrefix: "/docs",
