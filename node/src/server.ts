@@ -9,8 +9,12 @@ import {
 	type ZodTypeProvider,
 } from "fastify-type-provider-zod";
 import { env } from "./env";
-import { acessInviteLinkRoute } from "./routes/access-invite-link-route";
-import { subscribeToEventRoute } from "./routes/subscribe-to-event-route";
+import { subscribeToEventRoute } from "./routes/event/subscribe-to-event-route";
+import { acessInviteLinkRoute } from "./routes/invite/access-invite-link-route";
+import { getSubscriberInviteClicksRoute } from "./routes/invite/get-subscriber-invite-clicks-route";
+import { getSubscriberInvitesCountRoute } from "./routes/invite/get-subscriber-invites-count-route";
+import { getRankingRoute } from "./routes/ranking/get-ranking-route";
+import { getSubscriberRankingPositionRoute } from "./routes/ranking/get-subscriber-ranking-position-route";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -31,6 +35,10 @@ app.register(fastifySwagger, {
 
 app.register(subscribeToEventRoute);
 app.register(acessInviteLinkRoute);
+app.register(getSubscriberInviteClicksRoute);
+app.register(getSubscriberInvitesCountRoute);
+app.register(getSubscriberRankingPositionRoute);
+app.register(getRankingRoute);
 
 app.register(fastifySwaggerUi, {
 	routePrefix: "/docs",
